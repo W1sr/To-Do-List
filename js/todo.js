@@ -3,10 +3,6 @@
 const $formTodo = document.querySelector(".form-todo");
 const $newTask = $formTodo.querySelector(".newTask");
 const $wrapTask = $formTodo.querySelector(".wrapTask");
-const $wrap = $formTodo.querySelector(".wrap");
-const $btn = $formTodo.querySelector(".btn");
-const $task = $formTodo.querySelector(".task");
-const $check = $formTodo.querySelector(".check");
 
 $formTodo.addEventListener("submit", event => event.preventDefault());
 
