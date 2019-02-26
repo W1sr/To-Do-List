@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-todo">
+            <input class="newTask" type="text" placeholder="Descreva uma tarefa">
+            <input class="btn" type="submit" value="Incluir" onclick="addTask()">
+        
+            <fieldset class="wrapTask">
+                <!-- <div class="wrap">
+                    <input class="taskInput" id="tarefa1" type="checkbox">
+                    <label class="task" for="tarefa1">Tarefa 1</label>
+                    <span class="check">&#10003;</span>
+                    <span class="remove">X</span>
+                </div> -->
+            </fieldset>
+        </form>
+    </div>
+    <script src="js/todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.form-todo {
+    width: 50vw;
+    margin-top: 10px;
+}
+
+.form-todo .newTask {
+    width: 540px;
+    height: 35px;
+    border-bottom: 1px solid #0375B4;
+    font-size: 20px;
+}
+
+.form-todo .btn {
+    width: 120px;
+    height: 41px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #0375B4;
+    color: #fff;
+    font-family: inherit;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.form-todo .btn:hover {
+    border: 1px solid #0375B4;
+    background-color: #fff;
+    color: #0375B4;
+}
+
+.form-todo .wrapTask {
+    position: relative;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.form-todo .wrap {
+    height: 37px;
+    margin-bottom: 15px;
+}
+
+.form-todo .task {
+    line-height: 37px;
+}
+
+.form-todo .taskInput {
+    display: none;
+}
+
+.form-todo .task::selection {
+    background-color: transparent;
+}
+
+.form-todo .check {
+    position: absolute;
+    width: 40px;
+    line-height: 37px;
+    text-align: center;
+    color: #0f0;
+    background-color: rgba(0, 255, 0, .4); 
+    border-radius: 50%;
+    right: 195px;
+}
+
+.form-todo .check:hover {
+    cursor: pointer;
+    background-color: #0f0;
+    color: #fff;
+}
+
+.form-todo .wrap {
+    transition: opacity 200ms linear;
+}
+
+.form-todo .wrap.-active {
+    color: rgba(0, 0, 0, .4);
+    text-decoration: line-through;
+}
+
+.form-todo .wrap.-remove {
+    opacity: 0;
+}
+
+.form-todo .remove {
+    position: absolute;
+    width: 40px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    color: #f00;
+    background-color: rgba(255, 0, 0, .4);
+    border-radius: 50%;
+    right: 140px;
+}
+
+.form-todo .remove:hover {
+    cursor: pointer;
+    background-color: #f00;
+    color: #fff;
+}
